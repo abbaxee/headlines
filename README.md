@@ -1,0 +1,2 @@
+# ALC Take a Climb Challenge (Headlines)
+This is a simple informational website. It is a progressive web application that provides a user with top headlines based on country (filters) of choice. The application serves contents even when visited offline and gets updated with new contents available when it gets back online.
