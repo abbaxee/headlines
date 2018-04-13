@@ -1,4 +1,4 @@
-var staticCacheName = 'headline-static-v6';
+var staticCacheName = 'headline-static-v8';
 self.addEventListener('install', function (event) { 
     event.waitUntil(
 
@@ -9,7 +9,7 @@ self.addEventListener('install', function (event) {
                 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js',
                 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js',
                 'js/idb.js',
-                'js/main.js',
+                'main.js',
                 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
                 'css/style.css'
             ]);
