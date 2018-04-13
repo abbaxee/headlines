@@ -1,17 +1,17 @@
-var staticCacheName = 'headline-static-v5';
+var staticCacheName = 'headline-static-v6';
 self.addEventListener('install', function (event) { 
     event.waitUntil(
 
         caches.open(staticCacheName).then(function(cache) {
             return cache.addAll([
-                '/',
+                '/headlines/',
                 'https://code.jquery.com/jquery-3.2.1.slim.min.js',
                 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js',
                 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js',
-                'js/idb.js',
-                'main.js',
+                '/headlines/js/idb.js',
+                '/headlines/main.js',
                 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
-                'css/style.css'
+                'headlines/css/style.css'
             ]);
         })
     );
