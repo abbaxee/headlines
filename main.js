@@ -124,7 +124,7 @@ function displayNews(articles) {
         var author = articles[i].author;
         
         var articleDiv = document.createElement('div');
-        articleDiv.setAttribute('class', 'col-md-4 articleDiv');
+        articleDiv.setAttribute('class', 'col-md-6 col-lg-4 articleDiv');
 
         var sourceName = document.createElement('p');
         sourceName.setAttribute('class', 'news-source');
