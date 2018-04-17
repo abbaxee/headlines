@@ -19,7 +19,7 @@
   <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">ALC Challenge</a>
+      <a class="navbar-brand" href="index.html">ALC Challenge</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -27,7 +27,7 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
         </ul>
 
@@ -98,10 +98,12 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
         <div class="container">
-          <h1 class="display-3">Hello, Andela Learning Community!</h1>
-          <p>This is a simple informational website. It is a progressive web application that provides a user with 
-            top headlines based on country (filters) of choice. The application serves contents even when visited offline and 
-            gets updated with new contents available when it gets back online.</p>
+          <div class="desc">
+              <h1 class="display-3">Hello, Andela Learning Community!</h1>
+              <p id="desc-body">This is a simple informational website. It is a progressive web application that provides a user with 
+              top headlines based on country (filters) of choice. The application serves contents even when visited offline and 
+              gets updated with new contents available when it gets back online.</p>
+          </div>
         </div>
       </div>
 
@@ -119,6 +121,7 @@
 
     <footer class="container">
       <p>&copy; Abbaxee 2018</p>
+      <p>Powered by NewsAPI.org</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
@@ -128,6 +131,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/idb.js"></script>
+    <script src="sw.js"></script>
     <script src="main.js"></script>
   </body>
 </html>

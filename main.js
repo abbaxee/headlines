@@ -1,7 +1,7 @@
 // Register Service worker
 if('serviceWorker' in navigator){
     
-    navigator.serviceWorker.register('headlines/sw.js').then(function (reg) {
+    navigator.serviceWorker.register('/sw.js').then(function (reg) {
         console.log('Registration worked!', reg);
 
     }).catch(function (error) {
@@ -131,8 +131,12 @@ function displayNews(articles) {
         sourceName.textContent = articles[i].source.name;
 
         var articleImage = document.createElement('img');
-        articleImage.setAttribute('src', articles[i].urlToImage);
         articleImage.setAttribute('class', 'img-fluid rounded float-left');
+        if (articles[i].urlToImage == null) {
+            articleImage.src="img/breaking-news.jpg";
+        } else {
+            articleImage.src = articles[i].urlToImage; 
+        }
 
         var title = document.createElement('h4');
         title.textContent = articles[i].title;

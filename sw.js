@@ -1,18 +1,18 @@
-var staticCacheName = 'headline-static-v8';
+var staticCacheName = 'headline-static-v5';
+
 self.addEventListener('install', function (event) { 
     event.waitUntil(
-
         caches.open(staticCacheName).then(function(cache) {
             return cache.addAll([
-                'https://abbaxee.github.io/headlines/',
-                'https://abbaxee.github.io/headlines/index.html',
+                '/',
                 'https://code.jquery.com/jquery-3.2.1.slim.min.js',
                 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js',
                 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js',
-                'https://abbaxee.github.io/headlines/js/idb.js',
-                'https://abbaxee.github.io/headlines/main.js',
+                'js/idb.js',
+                'main.js',
                 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css',
-                'https://abbaxee.github.io/headlines/css/style.css'
+                'css/style.css',
+                "img/breaking-news.jpg"
             ]);
         })
     );
