@@ -17,6 +17,10 @@ body {
 .desc{
     text-align: center;
 }
+
+.post-time {
+    font-style: italic;
+}
 /* Responsiveness optimization */
 @media screen and (max-width: 549px) {
     .display-3 {

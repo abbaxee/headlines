@@ -138,6 +138,12 @@ function displayNews(articles) {
             articleImage.src = articles[i].urlToImage; 
         }
 
+        var postTime = document.createElement('small');
+        postTime.setAttribute('class', 'post-time');
+        postTime.textContent = "Published on " + 
+        moment(articles[i].publishedAt).format('MMMM Do YYYY, h:mma');
+
+
         var title = document.createElement('h4');
         title.textContent = articles[i].title;
 
@@ -149,6 +155,7 @@ function displayNews(articles) {
 
         articleDiv.appendChild(sourceName);
         articleDiv.appendChild(articleImage);
+        articleDiv.appendChild(postTime);
         articleDiv.appendChild(title);
         articleDiv.appendChild(description);
         articleDiv.appendChild(readMore);
